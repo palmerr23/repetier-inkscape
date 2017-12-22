@@ -1,0 +1,26 @@
+3436c3436
+< 					#print_("Reduced edges count from", sum([len(poly) for poly in polygon.polygon ]) )
+---
+> 					#print_("Redused edges count from", sum([len(poly) for poly in polygon.polygon ]) )
+3577c3577
+< 		self.OptionParser.add_option("",   "--path-to-gcode-sort-paths",	action="store", type="inkbool",		dest="path_to_gcode_sort_paths", default=True,		help="Sort paths to reduce rapid distance.")		
+---
+> 		self.OptionParser.add_option("",   "--path-to-gcode-sort-paths",	action="store", type="inkbool",		dest="path_to_gcode_sort_paths", default=True,		help="Sort paths to reduse rapid distance.")		
+5859,5860d5858
+< 				orientation_scale = 3.5433070660
+< 				print_("orientation_scale < 0 ===> switching to mm units=%0.10f"%orientation_scale )
+5863,5864d5860
+< 				orientation_scale = 90
+< 				print_("orientation_scale < 0 ===> switching to inches units=%0.10f"%orientation_scale )
+5867d5862
+< 			print_(("using orientation scale",orientation_scale,"i=",points))
+5869d5863
+< 				si = [i[0]*orientation_scale, i[1]*orientation_scale]
+5874c5868
+< 						'd':'m %s,%s 2.9375,-6.343750000001 0.8125,1.90625 6.843748640396,-6.84374864039 0,0 0.6875,0.6875 -6.84375,6.84375 1.90625,0.812500000001 z z' % (si[0], -si[1]+doc_height),
+---
+> 						'd':'m %s,%s 2.9375,-6.343750000001 0.8125,1.90625 6.843748640396,-6.84374864039 0,0 0.6875,0.6875 -6.84375,6.84375 1.90625,0.812500000001 z z' % (i[0], -i[1]+doc_height),
+5878c5872
+< 				draw_text("(%s; %s; %s)" % (i[0],i[1],i[2]), (si[0]+10), (-si[1]-10+doc_height), group = g, gcodetools_tag = "Gcodetools orientation point text")
+---
+> 				draw_text("(%s; %s; %s)" % (i[0],i[1],i[2]), (i[0]+10), (-i[1]-10+doc_height), group = g, gcodetools_tag = "Gcodetools orientation point text")
