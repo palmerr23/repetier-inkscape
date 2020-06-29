@@ -1,5 +1,7 @@
 # repetier-inkscape
-Updated files for Inkscape 0.92
+Updated files for Inkscape 0.92.
+
+This edited extension does not work with Inkscape 1.0 or later as it is not python 3 compliant. PLEASE USE THE INBUILT INKSCAPE EXTENSION: "Gcodetools > Path to Gcode" instead.
 
 These files go in your \Inkscape\share\extensions folder.
 
